@@ -16,23 +16,22 @@ body {
 }
 .main {
   background: var(--white);
-  max-width: min-content;
+  max-width: 20rem;
   height: max-content;
   margin: 0 auto;
   padding: 1em;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 
 img {
-  width: 18rem;
-  border-radius: 10px;
+  display:block;
+  width: 100%;
+  border-radius: 0.5rem;
 }
-h1 {
-  font-size: 1.5em;
-}
+
 p {
-  font-size: 15px;
+  font-size: 0.94rem;
   color: var(--grayish-blue);
   padding: 0 1em 1em 1em;
 }
