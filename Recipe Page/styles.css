@@ -1,0 +1,160 @@
+:root {
+  --white: #fff;
+  --rose-white: #fff5fa;
+  --egggshell: #f3e6d8;
+  --light-grey: #e4ded8;
+  --wenge-brown: #5f574e;
+  --dark-charcoal: #302d2c;
+  --nutmeg: #854632;
+  --dark-raspberry: #7b284f;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: var(--egggshell);
+  font-family: "Outfit", sans-serif;
+  color: var(--wenge-brown);
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background: var(--white);
+  width: 50%;
+  margin: 10% auto;
+  border-radius: 2rem;
+  padding: 1.5em;
+}
+
+h1 {
+  color: var(--dark-charcoal);
+}
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+p {
+  font-size: 1em;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+img,
+.preparation {
+  border-radius: 1rem;
+}
+.prep-heading {
+  font-size: 1.15em;
+  color: var(--dark-raspberry);
+  padding-left: 0.5em;
+}
+
+.preparation {
+  background: var(--rose-white);
+  padding: 1em;
+}
+.preparation li::marker {
+  color: var(--dark-raspberry);
+}
+li,
+td {
+  padding-left: 1em;
+}
+h2 {
+  color: var(--nutmeg);
+}
+li::marker {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+.ingredients li {
+  list-style-type: square;
+}
+.bold,
+.prep-heading {
+  font-weight: 800;
+}
+
+hr {
+  background: var(--light-grey);
+  border: none;
+  height: 1px;
+  margin-top: 2em;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  border-bottom: 1px solid var(--light-grey);
+}
+table :last-child {
+  border-bottom: none;
+}
+td .bold {
+  color: var(--nutmeg);
+}
+td {
+  padding: 0.75em 0.75em 0.75em 2em;
+}
+@media (max-width: 755px) {
+  .main {
+    padding: 1em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+@media (max-width: 450px) {
+  .main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .main,
+  img {
+    border-radius: 0;
+  }
+  p,
+  table {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  section:not(.header) {
+    margin: 0 auto;
+    width: 70%;
+  }
+  h1,
+  .header p {
+    margin: 1rem auto;
+    width: 70%;
+  }
+  h1 {
+    line-height: 1.5rem;
+  }
+  .preparation {
+    padding: 1em;
+  }
+}
+@media (max-width: 260px) {
+  h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  p,
+  table,
+  li::marker {
+    font-size: 0.75rem;
+  }
+  .prep-heading {
+    font-size: 0.8rem;
+  }
+  h2 {
+    font-size: 0.85rem;
+  }
+}
