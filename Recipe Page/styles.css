@@ -32,6 +32,9 @@ article {
   display: grid;
   order: -2;
 }
+.recipe-header p {
+  margin-bottom: 1.75em;
+}
 h1 {
   color: var(--dark-charcoal);
   font-size: 2em;
