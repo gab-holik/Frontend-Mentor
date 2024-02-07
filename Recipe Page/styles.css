@@ -8,7 +8,6 @@
   --nutmeg: #854632;
   --dark-raspberry: #7b284f;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -19,16 +18,25 @@ body {
   margin: 0;
   padding: 0;
 }
-.main {
+article {
   background: var(--white);
-  width: 50%;
-  margin: 10% auto;
+  display: grid;
+  max-width: 52em;
+  margin: 5% auto;
   border-radius: 2rem;
   padding: 1.5em;
 }
 
+/*Header*/
+.recipe-header {
+  display: grid;
+  order: -2;
+}
 h1 {
   color: var(--dark-charcoal);
+  font-size: 2em;
+  margin-bottom: 0;
+  margin-top: 0.75em;
 }
 h1,
 h2 {
@@ -41,20 +49,22 @@ p {
 img {
   display: block;
   max-width: 100%;
+  order: -1;
 }
 img,
 .preparation {
   border-radius: 1rem;
 }
-.prep-heading {
-  font-size: 1.15em;
+
+/*Preparation*/
+h3 {
   color: var(--dark-raspberry);
   padding-left: 0.5em;
 }
-
 .preparation {
   background: var(--rose-white);
   padding: 1em;
+  order: -1;
 }
 .preparation li::marker {
   color: var(--dark-raspberry);
@@ -63,6 +73,7 @@ li,
 td {
   padding-left: 1em;
 }
+/*Ingredients*/
 h2 {
   color: var(--nutmeg);
 }
@@ -73,17 +84,16 @@ li::marker {
 .ingredients li {
   list-style-type: square;
 }
-.bold,
-.prep-heading {
+.bold {
   font-weight: 800;
 }
-
 hr {
   background: var(--light-grey);
   border: none;
   height: 1px;
   margin-top: 2em;
 }
+/*Nutrition*/
 table {
   border-collapse: collapse;
   width: 100%;
@@ -99,62 +109,4 @@ td .bold {
 }
 td {
   padding: 0.75em 0.75em 0.75em 2em;
-}
-@media (max-width: 755px) {
-  .main {
-    padding: 1em;
-  }
-  p {
-    font-size: 1em;
-  }
-}
-@media (max-width: 450px) {
-  .main {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .main,
-  img {
-    border-radius: 0;
-  }
-  p,
-  table {
-    font-size: 1em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  section:not(.header) {
-    margin: 0 auto;
-    width: 70%;
-  }
-  h1,
-  .header p {
-    margin: 1rem auto;
-    width: 70%;
-  }
-  h1 {
-    line-height: 1.5rem;
-  }
-  .preparation {
-    padding: 1em;
-  }
-}
-@media (max-width: 260px) {
-  h1 {
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-  p,
-  table,
-  li::marker {
-    font-size: 0.75rem;
-  }
-  .prep-heading {
-    font-size: 0.8rem;
-  }
-  h2 {
-    font-size: 0.85rem;
-  }
 }
