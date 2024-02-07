@@ -1,0 +1,85 @@
+@media (max-width: 755px) {
+  article {
+    padding: 1em;
+  }
+  p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  article {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  article,
+  img {
+    border-radius: 0;
+  }
+  p,
+  table {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  ul,
+  ol {
+    padding-left: 2em;
+  }
+  section:not(.header) {
+    margin: 0 auto;
+    width: 70%;
+  }
+  h1,
+  .recipe-header p {
+    margin: 1rem auto;
+    width: 70%;
+  }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+  .preparation {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 340px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  li {
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 260px) {
+  h1 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  p,
+  table,
+  li::marker {
+    font-size: 0.75rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  h2 {
+    font-size: 0.85rem;
+  }
+  ul,
+  ol {
+    padding-left: 1.5em;
+  }
+}
