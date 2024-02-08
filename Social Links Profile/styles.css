@@ -1,0 +1,43 @@
+:root {
+  --white: #fff;
+  --grey: #333;
+  --dark-grey: #1f1f1f;
+  --off-black: #141414;
+  --green: #c5f82a;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  height: 100vh;
+  background: var(--off-black);
+  display: grid;
+  place-content: center;
+}
+
+article {
+  background: var(--dark-grey);
+  border-radius: 0.75rem;
+}
+.social-header {
+  display: grid;
+  justify-items: center;
+}
+.profile-pic {
+  border-radius: 50%;
+  display: block;
+  max-width: 5rem;
+  order: -1;
+}
+.location {
+  color: var(--green);
+  font-weight: 600;
+}
+.social-button {
+  display: block;
+  padding: 0.75rem 2rem;
+  background: var(--grey);
+  border-radius: 0.5rem;
+  color: var(--white);
+  text-decoration: none;
+}
