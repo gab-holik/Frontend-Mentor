@@ -5,23 +5,33 @@
   --off-black: #141414;
   --green: #c5f82a;
 }
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: "Inter", sans-serif;
   color: var(--white);
-  height: 100vh;
   background: var(--off-black);
   display: grid;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
   place-content: center;
+  text-align: center;
 }
-
 article {
   background: var(--dark-grey);
   border-radius: 0.75rem;
+  max-width: 24rem;
+  padding: 2rem;
 }
+
+/*Header*/
 .social-header {
   display: grid;
+  gap: 1.5rem;
   justify-items: center;
+  margin-bottom: 1.5rem;
 }
 .profile-pic {
   border-radius: 50%;
@@ -32,12 +42,39 @@ article {
 .location {
   color: var(--green);
   font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/*Social Links*/
+.social-links {
+  display: grid;
+  gap: 1rem;
 }
 .social-button {
-  display: block;
-  padding: 0.75rem 2rem;
   background: var(--grey);
-  border-radius: 0.5rem;
+  border-radius: 0.35rem;
   color: var(--white);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
   text-decoration: none;
+}
+.social-button:active {
+  background: var(--green);
+  color: var(--grey);
+}
+
+@media (max-width: 400px) {
+  article {
+    max-width: 20rem;
+  }
+  .social-links {
+    max-width: 17rem;
+  }
+  h1 {
+    font-size: 1.25rem;
+  }
+  p,
+  a {
+    font-size: 0.8rem;
+  }
 }
