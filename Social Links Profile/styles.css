@@ -19,7 +19,7 @@ body {
   place-content: center;
   text-align: center;
 }
-article {
+main {
   background: var(--dark-grey);
   border-radius: 0.75rem;
   max-width: 24rem;
@@ -64,7 +64,7 @@ article {
 }
 
 @media (max-width: 400px) {
-  article {
+  main {
     max-width: 20rem;
   }
   .social-links {
