@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
 }
+/*General Styling*/
 body {
   display: grid;
   font-family: "Figtree", sans-serif;
@@ -19,6 +20,7 @@ body,
 .category {
   background: var(--yellow);
 }
+/*Card Styling*/
 .main-container {
   background: var(--white);
   border-radius: 1rem;
