@@ -66,6 +66,9 @@ article {
 .heading-link:active {
   color: var(--yellow);
 }
+.main-container:active {
+  box-shadow: 15px 15px var(--black);
+}
 .avatar-img {
   max-width: 2.3rem;
   display: block;
