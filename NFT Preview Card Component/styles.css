@@ -1,14 +1,109 @@
 :root {
-  --soft-blue: hsl(215, 51%, 70%);
   --cyan: hsl(178, 100%, 50%);
   --background-blue: hsl(217, 54%, 11%);
   --card-blue: hsl(216, 50%, 16%);
-  --gray-blue: hsl(215, 32%, 27%);
+  --dark-blue: hsl(215, 32%, 27%);
+  --soft-blue: hsl(215, 51%, 70%);
   --white: #fff;
 }
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+/*General styling*/
 body {
   font-family: "Outfit", sans-serif;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: var(--background-blue);
+  color: var(--soft-blue);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+/*Card styling*/
+.card-container {
+  max-width: 20rem;
+  display: grid;
+  gap: 1rem;
+  background-color: var(--card-blue);
+  border: 10px solid var(--background-blue);
+  box-shadow: 0 0 1rem 20px var(--background-blue);
+  border-radius: 1.25rem;
+  padding: 1.2rem;
+}
+.card-image {
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+.background-img {
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.eye {
+  position: absolute;
+  opacity: 1;
+  background-color: #00fff780;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: 0.25rem;
+}
+.eye:hover {
+  opacity: 1;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+h1:hover,
+.name:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+h1,
+.name {
+  color: var(--white);
+}
+.crypto {
+  color: var(--cyan);
+}
+hr {
+  background: var(--soft-blue);
+  height: 1px;
+  border: none;
+  width: 95%;
+  margin: 0 auto;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+.crypto-info,
+.time-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.crypto-info {
+  font-weight: 600;
+}
+.creator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.avatar {
+  max-width: 2rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+p {
+  line-height: 1.5rem;
 }
