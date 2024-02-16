@@ -13,12 +13,12 @@
 }
 /*General styling*/
 body {
-  font-family: "Outfit", sans-serif;
-  display: grid;
-  height: 100vh;
-  place-items: center;
   background: var(--background-blue);
   color: var(--soft-blue);
+  display: grid;
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  place-content: center;
 }
 img {
   display: block;
@@ -26,84 +26,96 @@ img {
 }
 /*Card styling*/
 .card-container {
+  background-color: var(--card-blue);
+  box-shadow: 0 1rem 0.5rem 1rem #0c1727, 0 -0.5rem 0.5rem 1rem #0c1727;
+  border-radius: 1rem;
   max-width: 20rem;
   display: grid;
   gap: 1rem;
-  background-color: var(--card-blue);
-  border: 10px solid var(--background-blue);
-  box-shadow: 0 0 1rem 20px var(--background-blue);
-  border-radius: 1.25rem;
   padding: 1.2rem;
 }
+/*Background Image Styling*/
 .card-image {
-  height: 300px;
   width: 100%;
   position: relative;
 }
 .background-img {
-  border-radius: 0.25rem;
-  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  height: 100%;
 }
-
-.eye {
-  position: absolute;
-  opacity: 1;
+.hover-icon {
   background-color: #00fff780;
+  border-radius: 0.25rem;
+  display: grid;
+  place-items: center;
   width: 100%;
+  height: 100%;
+  position: absolute;
   top: 0%;
   left: 0%;
-  border-radius: 0.25rem;
+  opacity: 0;
 }
-.eye:hover {
+.hover-icon:hover {
   opacity: 1;
+  cursor: pointer;
 }
-
+/*Card Content Styling*/
 h1 {
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+h1,
+.name {
+  color: var(--white);
 }
 h1:hover,
 .name:hover {
   cursor: pointer;
   color: var(--cyan);
 }
-h1,
-.name {
-  color: var(--white);
+.card-description {
+  line-height: 1.5rem;
 }
-.crypto {
-  color: var(--cyan);
-}
-hr {
-  background: var(--soft-blue);
-  height: 1px;
-  border: none;
-  width: 95%;
-  margin: 0 auto;
-}
-.card {
+.crypto-info {
   display: flex;
   justify-content: space-between;
 }
-.crypto-info,
+.ethereum {
+  color: var(--cyan);
+}
+.crypto,
 .time-left {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.9rem;
 }
-.crypto-info {
+.crypto {
   font-weight: 600;
+}
+hr {
+  border-color: var(--soft-blue);
 }
 .creator {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 .avatar {
   max-width: 2rem;
   border: 1px solid var(--white);
   border-radius: 50%;
 }
-
-p {
-  line-height: 1.5rem;
+/*Responsive Styling*/
+@media (max-width: 300px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .card-container {
+    max-width: 17rem;
+  }
 }
