@@ -5,6 +5,8 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Screenshot
 
+<img width="577" alt="image" src="https://github.com/gab-holik/Frontend-Mentor/assets/97192580/13b01cc5-2854-45cf-93c2-1d6644e701c4">
+
 ### Links
 
-- Live Site URL: [Netlify]
+- Live Site URL: [Netlify](https://prismatic-pithivier-f3e49b.netlify.app/)
