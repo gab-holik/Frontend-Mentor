@@ -84,13 +84,15 @@ h2 {
   padding: 2.5rem 2.5rem;
 }
 .summary-title {
+  color: var(--dark-gray-blue);
   font-weight: 800;
   font-size: 1.5rem;
-  padding-bottom: 10px;
+  margin-bottom: 2px;
 }
 .details {
+  color: var(--dark-gray-blue);
   display: flex;
-  padding: 1rem;
+  padding: 0.85rem;
   justify-content: space-between;
   width: 100%;
   border-radius: 0.5rem;
