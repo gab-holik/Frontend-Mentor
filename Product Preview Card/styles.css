@@ -2,7 +2,7 @@
   --cream: hsl(30, 38%, 92%);
   --dark-blue: hsl(212, 21%, 14%);
   --dark-cyan: hsl(158, 36%, 37%);
-  --darker-cyan: hsl(158, 36%, 20%);
+  --darker-cyan: #1a4032;
   --dark-gray-blue: hsl(228, 12%, 48%);
   --white: #fff;
 }
@@ -22,17 +22,18 @@ body {
 }
 .card-container {
   background: var(--white);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: flex;
-  max-width: 40rem;
+  max-width: 600px;
+  height: 450px;
 }
 /*Product Image Styling*/
 .image {
   width: 50%;
 }
 .desktop-img {
-  border-bottom-left-radius: 1rem;
-  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
   display: block;
   max-width: 100%;
 }
@@ -48,8 +49,8 @@ body {
 }
 h1 {
   color: var(--dark-blue);
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 h1,
 h2 {
@@ -59,45 +60,53 @@ h2 {
   font-size: 2rem;
 }
 .category {
-  letter-spacing: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
   order: -1;
   text-transform: uppercase;
 }
 .product-description {
   line-height: 1.5rem;
+  font-size: 0.86rem;
 }
 .product-price {
   align-items: center;
   display: flex;
-  gap: 2rem;
+  gap: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 .new-price {
   color: var(--dark-cyan);
 }
 .old-price {
   text-decoration: line-through;
+  font-size: 0.8rem;
 }
 button {
-  align-items: center;
   background: var(--dark-cyan);
   border: none;
   border-radius: 0.5rem;
   color: var(--white);
-  display: flex;
-  font-weight: 700;
-  gap: 1rem;
-  justify-content: center;
-  padding: 0.5rem 2rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  word-spacing: 2.5px;
 }
 button:hover {
   background: var(--darker-cyan);
+}
+.icon {
+  padding-right: 10px;
+  vertical-align: middle;
 }
 /*Responsive Styling*/
 @media (max-width: 625px) {
   .card-container {
     flex-direction: column;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 343px;
+    height: 611px;
   }
   .desktop-img {
     display: none;
@@ -110,16 +119,19 @@ button:hover {
     padding: 1.5rem;
   }
   .mobile-img {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
     display: block;
     max-width: 100%;
   }
   h1 {
     font-size: 2rem;
+    line-height: 1.9rem;
+    margin-top: -2px;
   }
   button {
-    padding: 1rem 2rem;
+    padding: 0.95rem 2rem;
+    margin-top: -8px;
   }
 }
 @media (max-width: 300px) {
