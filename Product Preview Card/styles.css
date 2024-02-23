@@ -61,14 +61,15 @@ h2 {
 }
 .category {
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.3rem;
   order: -1;
   text-transform: uppercase;
 }
 .product-description {
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   font-size: 0.86rem;
+  margin-top: 5px;
 }
 .product-price {
   align-items: center;
@@ -78,27 +79,31 @@ h2 {
 }
 .new-price {
   color: var(--dark-cyan);
+  margin-top: 5px;
 }
 .old-price {
   text-decoration: line-through;
   font-size: 0.8rem;
+  margin-top: 3px;
+  margin-left: -1px;
 }
 button {
   background: var(--dark-cyan);
   border: none;
   border-radius: 0.5rem;
   color: var(--white);
-  font-size: 0.86rem;
+  font-size: 0.9rem;
   font-weight: 600;
   padding: 0.75rem 2rem;
-  word-spacing: 2.5px;
+  letter-spacing: 0.5px;
 }
 button:hover {
   background: var(--darker-cyan);
 }
 .icon {
-  padding-right: 10px;
+  padding-right: 12px;
   vertical-align: middle;
+  margin-bottom: 1.5px;
 }
 /*Responsive Styling*/
 @media (max-width: 625px) {
@@ -118,6 +123,9 @@ button:hover {
   .product-details {
     padding: 1.5rem;
   }
+  .product-price {
+    margin-bottom: 0;
+  }
   .mobile-img {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -126,12 +134,10 @@ button:hover {
   }
   h1 {
     font-size: 2rem;
-    line-height: 1.9rem;
-    margin-top: -2px;
+    line-height: 1.8rem;
   }
   button {
     padding: 0.95rem 2rem;
-    margin-top: -8px;
   }
 }
 @media (max-width: 300px) {
