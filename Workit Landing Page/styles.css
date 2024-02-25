@@ -1,0 +1,58 @@
+:root {
+  --dark-purple: #24053e;
+  --green: #44ffa1;
+  --gray: #584d62;
+  --ghost-white: #fcf8ff;
+  --white: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header styling*/
+header {
+  background: var(--dark-purple);
+  color: var(--white);
+}
+.mobile {
+  max-width: 764px;
+}
+.intro {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.intro-txt {
+  background: var(--dark-purple);
+  color: var(--white);
+}
+.btn {
+  border-radius: 0;
+  border: none;
+  color: var(--dark-purple);
+  background: var(--green);
+  padding: 1rem 2rem;
+}
+.btn:hover {
+  border: 1px solid var(--green);
+  color: var(--green);
+  background: var(--dark-purple);
+}
+.profile-pic {
+  max-width: 477px;
+}
+
+/*Footer styling*/
+.contact {
+  display: flex;
+  gap: 20px;
+}
