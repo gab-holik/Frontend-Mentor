@@ -20,13 +20,50 @@ a {
 }
 
 /*Header styling*/
-header {
+header::before {
+  content: "";
+  height: 81%;
+  width: 100%;
   background: var(--dark-purple);
+  border-radius: 0 0 50% 50% /0 0 100% 100%;
+  position: absolute;
+  transform: scaleX(2);
+  z-index: -1;
+}
+header {
+  position: relative;
+  overflow: hidden;
+}
+.heading {
+  max-width: 635px;
+  text-align: center;
+}
+h1 {
+  font-size: 5rem;
+  padding-bottom: 50px;
+}
+.highlight {
+  border-bottom: 2px solid var(--green);
+}
+.header-content {
   color: var(--white);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: center;
+  align-items: center;
+  row-gap: 50px;
+}
+.apply-btn {
+  grid-column: 3;
 }
 .mobile {
   max-width: 764px;
+  grid-column: 2;
 }
+
+/*Intro Styling*/
 .intro {
   max-width: 80%;
   margin: 0 auto;
