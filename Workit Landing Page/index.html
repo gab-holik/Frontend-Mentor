@@ -3,33 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" media="(max-width: 1280px)" />
     <title>Workit landing page</title>
   </head>
   <body>
     <header>
+      <div class="background"></div>
       <div class="header-content">
-        <img src="images/logo-light.svg" alt="white workit logo" width="120" />
-        <a href="" class="apply-btn header">Apply for access</a>
-
-        <img src="images/bg-pattern-1.svg" alt="green circle pattern" />
-        <div class="heading">
-          <h1>Data <span class="highlight">tailored</span> to your needs.</h1>
-          <a href="" class="btn">Learn more</a>
-        </div>
-        <img src="images/bg-pattern-2.svg" alt="green circle pattern" />
-        <img
-          src="images/image-hero.webp"
-          alt="mobile phone illustration"
-          class="mobile"
-        />
+        <nav>
+          <img src="images/logo-light.svg" alt="workit logo" class="logo" />
+          <a href="#" class="apply-btn header">Apply for access</a>
+        </nav>
+        <h1>Data <span class="highlight">tailored</span> to your needs.</h1>
+        <button class="btn header">Learn more</button>
+        <img src="images/image-hero.webp" alt="smart phone" class="phone" />
       </div>
     </header>
     <main>
-      <section class="items">
+      <div class="background main"></div>
+      <section class="items-flex">
         <div class="item">
           <p class="number">1</p>
-          <p class="item-title">Actionable insights</p>
+          <h2 class="item-title">Actionable insights</h2>
           <p class="content">
             Optimize your products, improve customer satisfaction and stay ahead
             of the competition with our product data analytics.
@@ -37,7 +39,7 @@
         </div>
         <div class="item">
           <p class="number">2</p>
-          <p class="item-title">Data-driven decisions</p>
+          <h2 class="item-title">Data-driven decisions</h2>
           <p class="content">
             Make data-driven decisions with our product data analytics. Our
             AI-generated reports help you unlock insights hidden in your product
@@ -46,7 +48,7 @@
         </div>
         <div class="item">
           <p class="number">3</p>
-          <p class="item-title">Always affordable</p>
+          <h2 class="item-title">Always affordable</h2>
           <p class="content">
             Always affordable pricing that scales with your business. Get
             top-quality product data analytics services without hidden costs or
@@ -54,22 +56,26 @@
           </p>
         </div>
       </section>
-      <section class="intro">
+      <section class="tester-flex">
         <img
           src="images/image-founder.webp"
           alt="founder profile picture"
           class="profile-pic"
         />
-        <div class="intro-txt">
-          <h2>Be the first to test</h2>
+        <div class="tester-txt">
+          <h2 class="tester-header">Be the first to test</h2>
           <p>
             Hi, I'm Louis Graham, the founder of the company. Book a demo call
             with me to become a beta tester for our app and kickstart your
             company. Apply for access below and I’ll be in touch to schedule a
             call.
           </p>
-          <a href="" class="btn main">Apply for access</a>
-          <img src="images/bg-pattern-3.svg" alt="green circle pattern" />
+          <button class="btn main">Apply for access</button>
+          <img
+            src="images/bg-pattern-3.svg"
+            alt="background image"
+            class="tester-background"
+          />
         </div>
       </section>
     </main>
