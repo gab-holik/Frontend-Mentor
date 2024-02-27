@@ -5,90 +5,204 @@
   --ghost-white: #fcf8ff;
   --white: #fff;
 }
+@font-face {
+  font-family: "Fraunces";
+  src: url(Fraunces_144pt-SemiBold.ttf);
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+/*General Styling*/
 img {
   display: block;
   max-width: 100%;
 }
-
 a {
   text-decoration: none;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  margin: 5rem auto 2rem;
+  max-width: 45%;
+  text-align: center;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.125rem;
+  line-height: 2;
+  overflow-x: hidden;
+}
 /*Header styling*/
-header::before {
-  content: "";
-  height: 81%;
-  width: 100%;
+.background {
   background: var(--dark-purple);
-  border-radius: 0 0 50% 50% /0 0 100% 100%;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  transform: scale(2);
+  height: 500px;
+  width: 100vw;
   position: absolute;
-  transform: scaleX(2);
+  top: 0;
   z-index: -1;
 }
 header {
   position: relative;
-  overflow: hidden;
+  height: 730px;
+  color: var(--white);
+  background-image: url(images/bg-pattern-1.svg), url(images/bg-pattern-2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -10% 36%, 104% 57%;
 }
-.heading {
-  max-width: 635px;
-  text-align: center;
-}
-h1 {
-  font-size: 5rem;
-  padding-bottom: 50px;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
 }
 .highlight {
+  text-decoration-line: underline;
+  text-decoration-color: var(--green);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 10px;
+}
+.apply-btn {
   border-bottom: 2px solid var(--green);
 }
 .header-content {
-  color: var(--white);
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  justify-items: center;
-  align-items: center;
-  row-gap: 50px;
-}
-.apply-btn {
-  grid-column: 3;
-}
-.mobile {
-  max-width: 764px;
-  grid-column: 2;
-}
-
-/*Intro Styling*/
-.intro {
-  max-width: 80%;
+  max-width: 1440px;
+  width: 80%;
   margin: 0 auto;
 }
-.intro-txt {
-  background: var(--dark-purple);
-  color: var(--white);
-}
 .btn {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
   border-radius: 0;
-  border: none;
+  border: 1px solid var(--green);
   color: var(--dark-purple);
   background: var(--green);
-  padding: 1rem 2rem;
 }
 .btn:hover {
-  border: 1px solid var(--green);
   color: var(--green);
   background: var(--dark-purple);
 }
+.btn.header {
+  margin: 0 auto;
+  width: 161px;
+  height: 61px;
+}
+.apply-btn:link,
+.apply-btn:visited {
+  color: var(--white);
+}
+.apply-btn:hover {
+  color: var(--green);
+}
+.phone {
+  max-width: 764px;
+  position: absolute;
+  z-index: 1;
+  top: 63%;
+  left: 26%;
+}
+/*Items styling*/
+.background.main {
+  background: var(--ghost-white);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  transform: scale(2);
+  height: 500px;
+  width: 100vw;
+  position: absolute;
+  top: 82%;
+  z-index: -2;
+}
+.items-flex {
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+  max-width: 1114px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 15em;
+  padding-bottom: 15em;
+}
+.item {
+  color: var(--dark-purple);
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+}
+.number {
+  border-radius: 50%;
+  border: 1px solid var(--dark-purple);
+  width: 56px;
+  height: 56px;
+  font-family: "Fraunces", serif;
+  display: grid;
+  place-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.item-title {
+  font-size: 2rem;
+}
+/*Tester Styling*/
+.tester-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
 .profile-pic {
   max-width: 477px;
+  position: absolute;
+  top: -5%;
+  left: 12%;
+  z-index: -1;
 }
-
+.tester-txt {
+  background: var(--dark-purple);
+  color: var(--white);
+  max-width: 730px;
+  height: 430px;
+  padding: 3rem;
+  margin: 10rem 0 2rem 25rem;
+  position: relative;
+}
+.tester-header {
+  font-size: 3.5rem;
+}
+.tester-txt p {
+  padding-bottom: 2rem;
+}
+.tester-background {
+  position: absolute;
+  top: 65%;
+  left: 56%;
+}
+.btn.main {
+  width: 190px;
+  height: 61px;
+}
 /*Footer styling*/
+footer {
+  margin: 4rem auto;
+  display: grid;
+  gap: 3rem;
+  place-items: center;
+}
 .contact {
   display: flex;
   gap: 20px;
