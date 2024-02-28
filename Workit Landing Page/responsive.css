@@ -1,4 +1,10 @@
 /*Media Queries*/
+@media (max-width: 1440px) {
+  .profile-pic {
+    left: 12%;
+    top: -2%;
+  }
+}
 @media (max-width: 1280px) {
   .background.main {
     top: 95%;
@@ -32,8 +38,8 @@
     font-size: 1.5rem;
   }
   .background.main {
-    height: 600px;
-    top: 44%;
+    height: 450px;
+    top: 62%;
   }
   .tester-txt {
     width: 514px;
@@ -53,7 +59,7 @@
     top: 2%;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 853px) {
   .apply-btn {
     font-size: 1.5rem;
   }
@@ -72,8 +78,8 @@
   .phone {
     width: 514px;
     height: 296px;
-    top: 80%;
-    left: 26%;
+    top: 87%;
+    left: 20%;
   }
   .background {
     transform: scale(3);
@@ -211,17 +217,19 @@
   .phone {
     left: 16%;
   }
+  .items-flex {
+    max-width: 90%;
+    width: 85%;
+    gap: 3rem;
+  }
 }
 @media (max-width: 380px) {
   h1 {
     max-width: 100%;
   }
-  .items-flex {
-    max-width: 90%;
-    width: 90%;
-  }
+
   .background.main {
-    height: 410px;
+    height: 425px;
   }
   .profile-pic {
     left: 13%;
