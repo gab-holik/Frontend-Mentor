@@ -219,7 +219,6 @@
   }
   .items-flex {
     max-width: 90%;
-    width: 85%;
     gap: 3rem;
   }
 }
