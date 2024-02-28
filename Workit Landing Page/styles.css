@@ -48,7 +48,7 @@ body {
   background: var(--dark-purple);
   border-radius: 0 0 50% 50% / 0 0 100% 100%;
   transform: scale(2);
-  height: 500px;
+  height: 490px;
   width: 100vw;
   position: absolute;
   top: 0;
@@ -66,7 +66,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 3.5rem;
+  padding-top: 3rem;
   font-weight: 800;
 }
 .highlight {
@@ -116,7 +116,7 @@ nav {
   max-width: 764px;
   position: absolute;
   z-index: 1;
-  top: 63%;
+  top: 60%;
   left: 26%;
 }
 /*Items styling*/
@@ -132,11 +132,11 @@ nav {
 }
 .items-flex {
   display: flex;
-  gap: 5rem;
+  gap: 2rem;
   align-items: start;
   text-align: center;
   max-width: 1114px;
-  width: 80%;
+  width: 85%;
   height: 100%;
   margin: 0 auto;
   padding-top: 14.5em;
