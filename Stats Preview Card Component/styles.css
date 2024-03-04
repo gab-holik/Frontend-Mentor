@@ -1,0 +1,130 @@
+:root {
+  --dark-blue: hsl(233, 47%, 7%); /*main background*/
+  --desaturated-blue: hsl(244, 38%, 16%); /*card background*/
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: #fff;
+  --white-main-p: hsla(0, 0%, 100%, 0.75);
+  --white-stat-h: hsla(0, 0%, 100%, 0.6);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 0.938rem;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-blue);
+  color: var(--white);
+  text-align: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background: var(--desaturated-blue);
+  width: 327px;
+  height: 780px;
+  border-radius: 8px;
+}
+h1 {
+  font-size: 1.75rem;
+}
+
+.highlight {
+  color: var(--soft-violet);
+}
+
+.text {
+  width: 100%;
+  height: 540px;
+  padding: 37px 33px;
+}
+.text p {
+  line-height: 1.55rem;
+  padding-top: 12px;
+}
+.image {
+  order: -1;
+  background-image: url("images/image-header-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: var(--soft-violet);
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 327px;
+  height: 240px;
+  border-radius: 8px 8px 0 0;
+}
+
+.details,
+.stats {
+  display: flex;
+}
+.details {
+  gap: 25px;
+  margin-top: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+.stats {
+  flex-direction: column;
+  gap: 1px;
+}
+h2 {
+  font-size: 1.5rem;
+}
+div:last-of-type {
+  text-transform: uppercase;
+}
+.stats p {
+  text-transform: uppercase;
+  font-family: "Lexend Deca", serif;
+  font-size: 12.5px;
+  letter-spacing: 0.5px;
+  padding-top: 0;
+}
+
+@media (min-width: 800px) {
+  body {
+    text-align: left;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    line-height: 2.75rem;
+    word-spacing: 2.5px;
+    margin-bottom: 13px;
+  }
+  main {
+    flex-direction: row;
+    width: 1110px;
+    height: 446px;
+    border-radius: 8px 0 0 8px;
+  }
+  .text {
+    width: 52%;
+    max-width: 570px;
+    padding: 72px 104px 72px 72px;
+  }
+  .image {
+    background-image: url("images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-color: var(--soft-violet);
+    background-blend-mode: multiply;
+    width: 49%;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+    order: 1;
+  }
+  .details {
+    gap: 63px;
+    margin-top: 4.5rem;
+    flex-direction: row;
+  }
+  .stats {
+    flex-direction: column;
+  }
+}
