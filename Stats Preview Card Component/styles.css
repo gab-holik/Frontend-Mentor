@@ -87,7 +87,7 @@ div:last-of-type {
   padding-top: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1070px) {
   body {
     text-align: left;
   }
