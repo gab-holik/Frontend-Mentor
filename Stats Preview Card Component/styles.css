@@ -84,8 +84,7 @@ div:last-of-type {
   letter-spacing: 0.5px;
   padding-top: 0;
 }
-
-@media (min-width: 1070px) {
+@media (min-width: 1024px) {
   body {
     text-align: left;
   }
@@ -99,7 +98,7 @@ div:last-of-type {
     border-radius: 8px 0 0 8px;
     flex-direction: row;
     height: 446px;
-    width: 1110px;
+    width: 1000px;
   }
   .text {
     max-width: 570px;
@@ -119,6 +118,14 @@ div:last-of-type {
   .details {
     flex-direction: row;
     gap: 63px;
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  main {
+    width: 1110px;
+  }
+  .details {
     margin-top: 4.5rem;
   }
 }
