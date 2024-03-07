@@ -1,0 +1,30 @@
+:root {
+  --pale-blue: #e0e8ff;
+  --bright-blue: #3829e0;
+  --very-pale-blue: #f5f7ff;
+  --desaturated-blue: #7280a7;
+  --dark-blue: #1f2f56;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--pale-blue);
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  display: grid;
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  place-items: center;
+  text-align: center;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+main {
+  background: var(--white);
+}
