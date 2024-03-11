@@ -5,6 +5,7 @@
   --transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraph*/
   --light-gray: hsl(0, 0%, 95%); /*background, headings, btns*/
 }
+/*General Styling*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +14,8 @@
 body {
   display: grid;
   place-content: center;
-  height: 1326px;
+  height: 100vh;
+  min-height: 1326px;
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.938rem;
 }
@@ -24,6 +26,7 @@ img {
 h1 {
   display: none;
 }
+/*Card Styling*/
 main {
   display: flex;
   flex-direction: column;
@@ -65,8 +68,9 @@ button {
   cursor: pointer;
   font-size: 0.938rem;
   justify-self: start;
+  line-height: 25px;
+  padding: 0.6rem 2rem;
   text-transform: capitalize;
-  padding: 0.8rem 2rem;
 }
 .sedan-btn {
   color: var(--orange);
@@ -90,4 +94,27 @@ button {
 }
 .lux-btn:hover {
   background: var(--dark-cyan);
+}
+/*Media Queries*/
+@media (min-width: 950px) {
+  body {
+    height: 100vh;
+    min-height: 100vh;
+  }
+  main {
+    flex-direction: row;
+    max-width: 920px;
+  }
+  .sedan-section {
+    border-radius: 8px 0 0 8px;
+  }
+  .luxury-section {
+    border-radius: 0 8px 8px 0;
+  }
+  section {
+    width: 500px;
+  }
+  .description {
+    margin-bottom: 5.5em;
+  }
 }
