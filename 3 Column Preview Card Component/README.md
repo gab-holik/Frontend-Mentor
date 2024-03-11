@@ -7,10 +7,10 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 ### Screenshot
 
 
-<img width="167" alt="image" src="https://github.com/gab-holik/Frontend-Mentor/assets/97192580/69f58732-5f82-4a3f-b28f-2e54b9014344">
+<img width="188" alt="image" src="https://github.com/gab-holik/Frontend-Mentor/assets/97192580/54f4e89d-0d38-4eff-b4d0-9d1b6e443f5c">
 
 
-<img width="747" alt="image" src="https://github.com/gab-holik/Frontend-Mentor/assets/97192580/722660fd-0494-4793-9e10-566cf64b0b7f">
+<img width="761" alt="image" src="https://github.com/gab-holik/Frontend-Mentor/assets/97192580/a62ea6a8-2510-4077-9bd4-b897dc0a0bf5">
 
 
 ### Built with
@@ -23,4 +23,4 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Links
 
-- Live Site URL: [Netlify](https://65ef9587d8cf502a784af8a6--dulcet-macaron-b25c66.netlify.app/)
+- Live Site URL: [Netlify](https://65ef9744ef81c634914e465f--dulcet-macaron-b25c66.netlify.app/)
