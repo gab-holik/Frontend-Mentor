@@ -9,53 +9,148 @@
   margin: 0;
   padding: 0;
 }
+/*General styling*/
 body {
-  font-size: 1rem;
-  font-family: "Karla", sans-serif;
+  align-items: center;
   background: var(--light-gray);
+  display: flex;
+  font-family: "Karla", sans-serif;
+  font-size: 0.875rem;
   font-weight: 400;
-  display: grid;
-  place-content: center;
-  height: 100vh;
+  height: 800px;
+  justify-content: center;
 }
+/*Card component styling*/
 main {
-  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 30px #0000002b;
   display: grid;
+  width: 311px;
+}
+section {
+  display: grid;
+}
+.join {
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  gap: 15px;
+  padding: 1.7rem 1.5rem 2rem 1.5rem;
 }
 h1 {
   color: var(--cyan);
+  font-size: 1.25rem;
+  letter-spacing: -0.25px;
+  margin-bottom: 10px;
 }
 p {
+  letter-spacing: -0.17px;
   line-height: 26px;
-  letter-spacing: 0.2px;
 }
 .sub-heading {
   color: var(--grass-green);
+  font-size: 0.938rem;
   font-weight: 700;
+  letter-spacing: -0.19px;
+  line-height: 20px;
 }
 .join-text {
   color: var(--darker-gray);
 }
 h2 {
   color: #fff;
+  font-size: 1.125rem;
+  letter-spacing: -0.22px;
 }
 .subscription {
   background: var(--cyan);
   color: #fff;
+  padding: 1.5rem;
 }
-.about-us {
-  background: #4abebd;
+.subscription-heading {
+  margin-bottom: 1.1rem;
+}
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+.offer {
+  align-items: center;
+  display: flex;
+  gap: 13px;
+  margin-bottom: 3px;
+}
+.offer p {
+  color: #ffffff63;
+}
+.subscription p {
+  font-size: 1rem;
+  letter-spacing: -0.2px;
 }
 button {
   background: var(--grass-green);
-  color: inherit;
-  font-size: inherit;
   border: none;
   border-radius: 5px;
+  box-shadow: 0 5px 20px #0000002b;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 0.9rem 3rem;
+}
+.about-us {
+  background: #4abebd;
+  border-radius: 0 0 5px 5px;
+  gap: 18px;
+  padding: 1.5rem 1.6rem;
 }
 ul {
+  color: #ffffff91;
+  letter-spacing: -0.17px;
   list-style-type: none;
   line-height: 20px;
-  letter-spacing: 0.17px;
-  color: #ffffff;
+}
+/*Media queries*/
+@media (min-width: 800px) {
+  body {
+    font-size: 1rem;
+    height: 100vh;
+  }
+  main {
+    border-radius: 8px;
+    grid-template-columns: 1fr 1fr;
+    width: 635px;
+  }
+  .join {
+    border-radius: 8px 8px 0 0;
+    grid-column: 1 / span 2;
+    padding: 2.5rem;
+  }
+  .subscription {
+    border-bottom-left-radius: 8px;
+    padding: 2.5rem;
+  }
+  .about-us {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 8px;
+    padding: 2.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: -0.3px;
+  }
+  .join-text {
+    margin-top: -4px;
+  }
+  .sub-heading,
+  h2 {
+    font-size: 1.125rem;
+    letter-spacing: -0.22px;
+  }
+  p {
+    letter-spacing: -0.2px;
+  }
+  ul {
+    font-size: 0.875rem;
+  }
 }
