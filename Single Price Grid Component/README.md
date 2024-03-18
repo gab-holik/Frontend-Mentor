@@ -25,4 +25,4 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Links
 
-- Live Site URL: [Netlify](https://65f630f62a0b0c136b0b90fa--magnificent-crisp-218e5c.netlify.app/)
+- Live Site URL: [Netlify](https://65f87e382115b9a1dc19faaa--magnificent-crisp-218e5c.netlify.app/)
