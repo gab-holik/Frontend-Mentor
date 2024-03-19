@@ -7,13 +7,33 @@
       src="https://kit.fontawesome.com/847b0e3032.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
   </head>
   <body>
     <main>
-      <section class="images"></section>
+      <header>
+        <img src="images/logo.svg" class="logo" alt="huddle logo" />
+      </header>
+      <section class="images">
+        <img
+          src="images/illustration-mockups.svg"
+          class="illustration"
+          alt="desktop & mobile app illsutration"
+        />
+      </section>
       <section class="text">
         <h1>Build The Community Your Fans Will Love</h1>
         <p class="intro">
@@ -24,9 +44,9 @@
         <button class="reg-btn">Register</button>
       </section>
       <footer>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
+        <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="social"><i class="fa-brands fa-twitter"></i></div>
+        <div class="social"><i class="fa-brands fa-instagram"></i></div>
       </footer>
     </main>
   </body>
