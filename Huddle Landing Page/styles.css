@@ -89,6 +89,7 @@ footer {
   font-size: 0.825rem;
   height: 28px;
   justify-content: center;
+  text-decoration: none;
   width: 28px;
 }
 .social:hover {
