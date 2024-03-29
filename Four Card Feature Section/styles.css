@@ -7,17 +7,16 @@
   --gray-blue: #979797;
   --light-gray: #fafafa;
 }
+/*Global resetting*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+/*General Styling*/
 img {
   display: block;
   max-width: 100%;
-}
-h1 {
-  display: none;
 }
 body {
   background-color: var(--light-gray);
@@ -25,57 +24,63 @@ body {
   display: grid;
   font-family: "Poppins", sans-serif;
   font-size: 0.813rem;
-  min-height: 1360px;
-  place-content: center;
-}
-h2 {
-  font-size: 1.5rem;
-  letter-spacing: 0.17px;
+  gap: 4.5rem;
+  margin: 5.2rem 0 5rem;
+  place-items: center;
 }
 p {
   color: var(--gray-blue);
 }
-header,
-main {
-  width: 311px;
-}
+/*Header styling*/
 header {
   text-align: center;
 }
+header,
 main {
-  display: grid;
-  gap: 1.5rem;
+  max-width: 311px;
 }
-.normal-heading {
+.main-heading {
   font-weight: 200;
+}
+.main-heading,
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.17px;
 }
 .intro {
   font-size: 0.938rem;
   letter-spacing: 0.1px;
   line-height: 25px;
-  margin: 1rem 0 4.8rem;
+  margin-top: 1rem;
 }
-.card-heading {
-  font-size: 1.25rem;
-  margin-bottom: 3px;
-}
-.card-content {
-  letter-spacing: 0.09px;
-  line-height: 23px;
-  width: 254px;
-  margin-bottom: 1.8rem;
+/*Cards styling*/
+main {
+  display: grid;
+  gap: 1.5rem;
 }
 .card {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 5px 15px #d1dff5;
+  display: flex;
+  flex-direction: column;
   height: 222px;
-  padding: 1.6rem 1.8rem;
+  padding: 1.55rem 1.8rem 1.8rem;
+}
+.card-heading {
+  font-size: 1.25rem;
+  margin-bottom: 1px;
+}
+.card-content {
+  letter-spacing: 0.09px;
+  line-height: 23px;
+  margin-bottom: 1.8rem;
 }
 .icon {
-  margin-left: auto;
   width: 57px;
   height: 57px;
+  align-self: flex-end;
+  margin-top: auto;
 }
 .supervisor-card {
   border-top: 4px solid var(--cyan);
@@ -88,4 +93,55 @@ main {
 }
 .calculator-card {
   border-top: 4px solid var(--blue);
+}
+/*Media Queries*/
+@media (min-width: 750px) {
+  body {
+    margin: 4.8rem 0 2rem;
+    gap: 4rem;
+  }
+  header,
+  main {
+    max-width: max-content;
+  }
+  .main-heading,
+  h1 {
+    font-size: 2.25rem;
+    letter-spacing: 0.25px;
+  }
+  .intro {
+    max-width: 540px;
+    margin-top: 0.7rem;
+  }
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+  .card {
+    height: 250px;
+    max-width: 350px;
+    padding: 1.6rem 2rem 2rem;
+  }
+  .card-heading {
+    margin-bottom: 10px;
+  }
+  .icon {
+    height: 64px;
+    width: 64px;
+  }
+  .supervisor-card {
+    grid-row: 1 / -1;
+  }
+  .karma-card {
+    grid-column: 2 / 3;
+  }
+  .calculator-card {
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
+  }
+  .supervisor-card,
+  .calculator-card {
+    align-self: center;
+  }
 }
