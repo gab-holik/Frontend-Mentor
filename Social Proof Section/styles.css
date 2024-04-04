@@ -1,0 +1,111 @@
+:root {
+  --white: #fff;
+  --dark-magenta: #937b92;
+  --light-magenta: #f7f2f7;
+  --v-dark-magenta: #502050;
+  --soft-pink: #ee68a4;
+  --normal: 400;
+  --semi-bold: 500;
+  --bold: 700;
+}
+/* General reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: var(--semi-bold);
+  font-size: 1.063rem;
+  text-align: center;
+  background-image: url("images/bg-pattern-top-mobile.svg"),
+    url("images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  padding: 4rem 1.5rem;
+  display: grid;
+  gap: 2rem;
+}
+.header {
+  max-width: 445px;
+}
+.heading-primary {
+  font-size: 2.5rem;
+  color: var(--v-dark-magenta);
+  line-height: 2rem;
+  letter-spacing: -1.43px;
+  margin-bottom: 1.5rem;
+}
+.description {
+  font-size: 1.188rem;
+  color: var(--dark-magenta);
+  line-height: 1.563rem;
+  letter-spacing: -0.63px;
+}
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.rating {
+  background-color: var(--light-magenta);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-width: 445px;
+}
+.rating-stars {
+  display: flex;
+}
+.rating-text {
+  color: var(--v-dark-magenta);
+  font-weight: var(--bold);
+  font-size: 1.063rem;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.testimonial-card {
+  background-color: var(--v-dark-magenta);
+  color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 350px;
+  min-height: 248px;
+  display: grid;
+  place-content: center;
+}
+.card-header {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+.name {
+  font-weight: var(--bold);
+  margin-bottom: 0.375rem;
+}
+.sub-heading {
+  color: var(--soft-pink);
+  font-weight: var(--normal);
+}
+.testimonial {
+  line-height: 1.375rem;
+  letter-spacing: -0.3px;
+}
