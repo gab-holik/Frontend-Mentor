@@ -118,10 +118,22 @@ img {
     background-image: url(images/bg-pattern-top-desktop.svg),
       url(images/bg-pattern-bottom-desktop.svg);
   }
-  .ratings {
-    flex-direction: row;
+  .header {
+    text-align: left;
   }
+  .heading-primary {
+    font-size: 3.5rem;
+    line-height: 3rem;
+    letter-spacing: -2px;
+  }
+  .ratings,
+  .rating,
   .testimonials {
     flex-direction: row;
+  }
+  .rating {
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem 2rem;
   }
 }
