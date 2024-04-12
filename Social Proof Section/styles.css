@@ -130,7 +130,6 @@ img {
     line-height: 3rem;
     margin-bottom: 1.7rem;
   }
-
   .rating,
   .testimonials {
     flex-direction: row;
@@ -161,5 +160,14 @@ img {
   .testimonials {
     gap: 1.9rem;
     grid-column: 1 / -1;
+    height: 266px;
+  }
+  .testimonial-card:nth-child(2),
+  .rating:nth-child(2) {
+    align-self: center;
+  }
+  .testimonial-card:nth-child(3),
+  .rating:nth-child(3) {
+    align-self: flex-end;
   }
 }
