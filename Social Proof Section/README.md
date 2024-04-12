@@ -5,7 +5,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Screenshot
 
-![image](https://github.com/gab-holik/Frontend-Mentor/assets/97192580/15d7e953-26ab-4f39-8b30-5251078058c3)
+<img width="276" alt="image" src="https://github.com/gab-holik/Frontend-Mentor/assets/97192580/02e8d509-1e4d-4cd1-b6eb-47390daab33a">
 
 <img width="1087" alt="image" src="https://github.com/gab-holik/Frontend-Mentor/assets/97192580/2a935608-833f-48e9-b447-5a2bb5d52e61">
 
