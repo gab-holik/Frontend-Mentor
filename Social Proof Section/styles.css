@@ -153,6 +153,7 @@ img {
   .container {
     gap: 3.3rem 1.5rem;
     grid-template-columns: 1fr 1fr;
+    margin: 0 2rem;
     padding-left: 0;
     padding-right: 0;
     place-items: start;
