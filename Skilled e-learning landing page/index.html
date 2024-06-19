@@ -7,16 +7,44 @@
   </head>
   <body>
     <header class="header">
+      <img src="img/logo-dark.svg" alt="skilled logo" class="logo logo--dark" />
       <a href="#" class="btn header__btn">Get Started</a>
     </header>
     <main class="main">
       <div class="hero">
-        <h1 class="heading__1">Maximize skill, minimize budget</h1>
-        <p class="hero__paragraph">
-          Our modern courses across a range of in-demand skills will give you
-          the knowledge you need to live the life you want.
-        </p>
-        <a href="#" class="btn hero__btn">Get Started</a>
+        7
+        <div class="hero__text">
+          <h1 class="heading__1">Maximize skill, minimize budget</h1>
+          <p class="hero__paragraph">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <a href="#" class="btn hero__btn">Get Started</a>
+        </div>
+        <div class="hero__img">
+          <picture class="hero__img--mobile">
+            <source
+              srcset="
+                img/image-hero-mobile.webp    1x,
+                img/image-hero-mobile@2x.webp 2x
+              "
+              type="image/webp"
+              alt="29k Members, 1451 course hours"
+            />
+            <source
+              srcset="
+                img/image-hero-mobile.png    1x,
+                img/image-hero-mobile@2x.png 2x
+              "
+              type="image/png"
+              alt="29k Members, 1451 course hours"
+            />
+            <img
+              src="img/image-hero-mobile.png"
+              alt="29k Members, 1451 course hours"
+            />
+          </picture>
+        </div>
       </div>
       <div class="courses">
         <div class="most-popular">
@@ -66,6 +94,11 @@
       </div>
     </main>
     <footer class="footer">
+      <img
+        src="img/logo-light.svg"
+        alt="skilled logo"
+        class="logo logo--light"
+      />
       <a href="#" class="btn footer__btn">Get Started</a>
     </footer>
   </body>
