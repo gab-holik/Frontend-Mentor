@@ -1,0 +1,30 @@
+//Colors
+$color-primary-dark: #13183f;
+$color-bright-pink: #f74780;
+$color-blue: #666ca3;
+$color-grey: #83869a;
+$color-pink: #ffa7c3;
+$color-white: #fff;
+$color-orange-gradient: #ff6f48;
+$color-pink-gradient: #f02aa6;
+$color-purple-gradient: #4851ff;
+
+//Global reset
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: $color-grey;
+}
+.heading__1,
+.heading__2,
+.heading__3 {
+  color: $color-primary-dark;
+  font-weight: 900;
+}
