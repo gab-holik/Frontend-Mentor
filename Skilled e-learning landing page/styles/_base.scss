@@ -26,5 +26,70 @@ body {
 .heading__2,
 .heading__3 {
   color: $color-primary-dark;
-  font-weight: 900;
+  font-weight: 800;
+}
+
+//Buttons
+%btn-reset {
+  text-decoration: none;
+  font-weight: 700;
+}
+%btn-color {
+  color: $color-white;
+}
+
+@mixin btn($top, $left, $radius) {
+  padding: $top $left;
+  border-radius: $radius;
+}
+.header__btn:link,
+.hero__btn:link,
+.course-box__btn:link,
+.footer__btn:link {
+  @extend %btn-reset;
+}
+
+.header__btn:link,
+.header__btn:visited {
+  @extend %btn-color;
+  @include btn(0.8rem, 1.5rem, 28px);
+  background-color: $color-primary-dark;
+}
+.header__btn:hover,
+.header__btn:active {
+  background-color: $color-blue;
+}
+.hero__btn:link,
+.hero__btn:visited {
+  @extend %btn-color;
+  @include btn(1.1rem, 2.3rem, 31.5px);
+  background-image: linear-gradient(
+    $color-orange-gradient,
+    $color-pink-gradient
+  );
+}
+
+.hero__btn:hover,
+.hero__btn:active {
+  background-image: linear-gradient(
+    rgba($color-orange-gradient, 0.5),
+    rgba($color-pink-gradient, 0.5)
+  );
+}
+
+.footer__btn:link,
+.footer__btn:visited {
+  @extend %btn-color;
+  @include btn(0.8rem, 1.5rem, 31.5px);
+  background-image: linear-gradient(
+    $color-purple-gradient,
+    $color-pink-gradient
+  );
+}
+.footer__btn:hover,
+.footer__btn:active {
+  background-image: linear-gradient(
+    rgba($color-purple-gradient, 0.5),
+    rgba($color-pink-gradient, 0.5)
+  );
 }
