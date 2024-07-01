@@ -29,6 +29,9 @@ body {
   font-weight: 800;
 }
 
+img {
+  display: block;
+}
 //Buttons
 %btn-reset {
   text-decoration: none;
@@ -42,54 +45,62 @@ body {
   padding: $top $left;
   border-radius: $radius;
 }
-.header__btn:link,
-.hero__btn:link,
-.course-box__btn:link,
-.footer__btn:link {
+.header__btn,
+.hero__btn,
+.course-box__btn,
+.footer__btn {
   @extend %btn-reset;
 }
-
-.header__btn:link,
-.header__btn:visited {
+.header__btn,
+.hero__btn,
+.footer__btn {
   @extend %btn-color;
+}
+.header__btn {
   @include btn(0.8rem, 1.5rem, 28px);
-  background-color: $color-primary-dark;
+  &:link,
+  &:visited {
+    background-color: $color-primary-dark;
+  }
+  &:hover,
+  &:active {
+    background-color: $color-blue;
+  }
 }
-.header__btn:hover,
-.header__btn:active {
-  background-color: $color-blue;
-}
-.hero__btn:link,
-.hero__btn:visited {
-  @extend %btn-color;
+.hero__btn {
   @include btn(1.1rem, 2.3rem, 31.5px);
-  background-image: linear-gradient(
-    $color-orange-gradient,
-    $color-pink-gradient
-  );
+  &:link,
+  &:visited {
+    background-image: linear-gradient(
+      $color-orange-gradient,
+      $color-pink-gradient
+    );
+  }
+  &:hover,
+  &:active {
+    background-image: linear-gradient(
+      rgba($color-orange-gradient, 0.5),
+      rgba($color-pink-gradient, 0.5)
+    );
+  }
 }
-
-.hero__btn:hover,
-.hero__btn:active {
-  background-image: linear-gradient(
-    rgba($color-orange-gradient, 0.5),
-    rgba($color-pink-gradient, 0.5)
-  );
+.course-box__btn {
+  color: $color-bright-pink;
 }
-
-.footer__btn:link,
-.footer__btn:visited {
-  @extend %btn-color;
-  @include btn(0.8rem, 1.5rem, 31.5px);
-  background-image: linear-gradient(
-    $color-purple-gradient,
-    $color-pink-gradient
-  );
-}
-.footer__btn:hover,
-.footer__btn:active {
-  background-image: linear-gradient(
-    rgba($color-purple-gradient, 0.5),
-    rgba($color-pink-gradient, 0.5)
-  );
+.footer__btn {
+  @include btn(0.8rem, 1.5rem, 28px);
+  &:link,
+  &:visited {
+    background-image: linear-gradient(
+      $color-purple-gradient,
+      $color-pink-gradient
+    );
+  }
+  &:hover,
+  &:active {
+    background-image: linear-gradient(
+      rgba($color-purple-gradient, 0.5),
+      rgba($color-pink-gradient, 0.5)
+    );
+  }
 }
