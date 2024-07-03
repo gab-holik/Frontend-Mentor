@@ -8,7 +8,21 @@ $color-white: #fff;
 $color-orange-gradient: #ff6f48;
 $color-pink-gradient: #f02aa6;
 $color-purple-gradient: #4851ff;
+$logo-width: 89px;
 
+//Mixins
+
+@mixin btn($top, $left, $radius) {
+  padding: $top $left;
+  border-radius: $radius;
+  display: inline-block;
+}
+
+@mixin layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 //Global reset
 
 *,
@@ -31,7 +45,14 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
 }
+
+//Logo
+.logo {
+  width: $logo-width;
+}
+
 //Buttons
 %btn-reset {
   text-decoration: none;
@@ -41,10 +62,6 @@ img {
   color: $color-white;
 }
 
-@mixin btn($top, $left, $radius) {
-  padding: $top $left;
-  border-radius: $radius;
-}
 .header__btn,
 .hero__btn,
 .course-box__btn,
