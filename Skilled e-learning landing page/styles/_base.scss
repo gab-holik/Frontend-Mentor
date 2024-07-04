@@ -8,7 +8,12 @@ $color-white: #fff;
 $color-orange-gradient: #ff6f48;
 $color-pink-gradient: #f02aa6;
 $color-purple-gradient: #4851ff;
+
+//Logo
 $logo-width: 89px;
+
+//Margins & Paddings
+$margin-small: 0.8rem;
 
 //Mixins
 
@@ -23,6 +28,7 @@ $logo-width: 89px;
   align-items: center;
   justify-content: space-between;
 }
+
 //Global reset
 
 *,
