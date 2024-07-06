@@ -6,8 +6,12 @@
     line-height: 51px;
     margin-bottom: 1rem;
   }
+  .heading__1,
+  &__paragraph,
+  &__btn {
+    margin-bottom: 1rem;
+  }
   &__paragraph {
     line-height: 26px;
-    margin-bottom: 1rem;
   }
 }
