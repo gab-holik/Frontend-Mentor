@@ -1,5 +1,5 @@
 .footer {
   @include layout;
   background-color: $color-primary-dark;
-  padding: 2rem 0.8rem;
+  padding: 2rem $margin-small;
 }

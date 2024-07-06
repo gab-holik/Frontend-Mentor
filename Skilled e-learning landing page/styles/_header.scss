@@ -1,4 +1,4 @@
 .header {
   @include layout;
-  padding: 0.8rem;
+  margin: 0.8rem $margin-small 0.8rem;
 }

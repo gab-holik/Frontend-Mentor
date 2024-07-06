@@ -13,7 +13,7 @@ $color-purple-gradient: #4851ff;
 $logo-width: 89px;
 
 //Margins & Paddings
-$margin-small: 0.8rem;
+$margin-small: 1rem;
 
 //Mixins
 
@@ -40,6 +40,7 @@ $margin-small: 0.8rem;
 }
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  background-image: linear-gradient(#ffffff, #eeefff);
   color: $color-grey;
 }
 .heading__1,
