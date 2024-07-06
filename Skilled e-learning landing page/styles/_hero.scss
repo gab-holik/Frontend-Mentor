@@ -13,5 +13,8 @@
   }
   &__paragraph {
     line-height: 26px;
+    .no-break {
+      white-space: nowrap;
+    }
   }
 }
