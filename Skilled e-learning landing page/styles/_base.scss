@@ -15,8 +15,13 @@ $logo-width: 89px;
 //Margins & Paddings
 $margin-small: 1rem;
 
-//Mixins
+//Breakpoints
 
+$desktop: 900px;
+$tablet: 600px;
+$mobile: 375px;
+
+//Mixins
 @mixin btn($top, $left, $radius) {
   padding: $top $left;
   border-radius: $radius;
@@ -28,8 +33,6 @@ $margin-small: 1rem;
   align-items: center;
   justify-content: space-between;
 }
-
-//Breakpoints
 
 //Global reset
 
@@ -45,9 +48,9 @@ body {
   background-image: linear-gradient(#ffffff, #eeefff);
   color: $color-grey;
 }
-.heading__1,
-.heading__2,
-.heading__3 {
+.heading--1,
+.heading--2,
+.heading--3 {
   color: $color-primary-dark;
   font-weight: 800;
 }
