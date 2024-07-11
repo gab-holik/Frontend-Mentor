@@ -15,12 +15,12 @@
   <body>
     <header class="header">
       <img src="img/logo-dark.svg" alt="skilled logo" class="logo" />
-      <a href="#" class="btn header__btn">Get Started</a>
+      <a href="#" class="header__btn">Get Started</a>
     </header>
     <main class="main">
       <div class="hero">
         <div class="hero__text">
-          <h1 class="heading__1">Maximize skill, minimize budget</h1>
+          <h1 class="heading--1">Maximize skill, minimize budget</h1>
           <p class="hero__paragraph">
             Our modern courses across a range of
             <span class="no-break">in-demand</span> skills will give you the
@@ -28,38 +28,62 @@
           </p>
           <a href="#" class="hero__btn">Get Started</a>
         </div>
-        <div class="hero__img">
-          <picture class="hero__img--mobile">
-            <source
-              srcset="
-                img/image-hero-mobile.webp    1x,
-                img/image-hero-mobile@2x.webp 2x
-              "
-              type="image/webp"
-              alt="29k Members, 1451 course hours"
-            />
-            <source
-              srcset="
-                img/image-hero-mobile.png    1x,
-                img/image-hero-mobile@2x.png 2x
-              "
-              type="image/png"
-              alt="29k Members, 1451 course hours"
-            />
-            <img
-              src="img/image-hero-mobile.png"
-              alt="29k Members, 1451 course hours"
-            />
-          </picture>
-        </div>
+        <picture class="hero__img">
+          <source
+            srcset="
+              img/image-hero-desktop.webp    1x,
+              img/image-hero-desktop@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              img/image-hero-desktop.png    1x,
+              img/image-hero-desktop@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            srcset="
+              img/image-hero-tablet.webp    1x,
+              img/image-hero-tablet@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              img/image-hero-tablet.png    1x,
+              img/image-hero-tablet@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            srcset="
+              img/image-hero-mobile.webp    1x,
+              img/image-hero-mobile@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              img/image-hero-mobile.png    1x,
+              img/image-hero-mobile@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            src="img/image-hero-mobile.png"
+            alt="29k Members, 1451 course hours"
+          />
+        </picture>
       </div>
       <div class="courses">
         <div class="most-popular">
-          <h2 class="heading__2">Check out our most popular courses!</h2>
+          <h2 class="heading--2">Check out our most popular courses!</h2>
         </div>
         <div class="course-box">
           <img src="img/icon-animation.svg" alt="" class="course-box__icon" />
-          <h3 class="heading__3">Animation</h3>
+          <h3 class="heading--3">Animation</h3>
           <p class="course-box__paragraph">
             Learn the latest animation techniques to create stunning motion
             design and captivate your audience.
@@ -68,7 +92,7 @@
         </div>
         <div class="course-box">
           <img src="img/icon-design.svg" alt="" class="course-box__icon" />
-          <h3 class="heading__3">Design</h3>
+          <h3 class="heading--3">Design</h3>
           <p class="course-box__paragraph">
             Create beautiful, usable interfaces to help shape the future of how
             the web looks.
@@ -77,7 +101,7 @@
         </div>
         <div class="course-box">
           <img src="img/icon-photography.svg" alt="" class="course-box__icon" />
-          <h3 class="heading__3">Photography</h3>
+          <h3 class="heading--3">Photography</h3>
           <p class="course-box__paragraph">
             Explore critical fundamentals like lighting, composition, and focus
             to capture exceptional photos.
@@ -86,7 +110,7 @@
         </div>
         <div class="course-box">
           <img src="img/icon-crypto.svg" alt="" class="course-box__icon" />
-          <h3 class="heading__3">Crypto</h3>
+          <h3 class="heading--3">Crypto</h3>
           <p class="course-box__paragraph">
             All you need to know to get started investing in crypto. Go from
             beginner to advanced with this 54 hour course.
@@ -95,7 +119,7 @@
         </div>
         <div class="course-box">
           <img src="img/icon-business.svg" alt="" class="course-box__icon" />
-          <h3 class="heading__3">Business</h3>
+          <h3 class="heading--3">Business</h3>
           <p class="course-box__paragraph">
             A step-by-step playbook to help you start, scale, and sustain your
             business without outside investment.
