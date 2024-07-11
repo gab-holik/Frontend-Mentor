@@ -2,8 +2,15 @@
   margin: 2rem $margin-small 5rem;
   display: grid;
   gap: 2.8rem;
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
 
-  .heading__2 {
+    .most-popular {
+      align-self: stretch;
+    }
+  }
+
+  .heading--2 {
     color: $color-white;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -13,7 +20,7 @@
     );
     padding: 1.5rem;
   }
-  .heading__2,
+  .heading--2,
   .course-box {
     border-radius: 10px;
   }
@@ -27,7 +34,7 @@
       position: absolute;
       top: -1.5rem;
     }
-    .heading__3 {
+    .heading--3 {
       font-size: 1.25rem;
     }
     &__paragraph {
@@ -35,7 +42,7 @@
       margin-bottom: 1.5rem;
     }
 
-    .heading__3,
+    .heading--3,
     &__btn {
       margin-bottom: 1rem;
     }
