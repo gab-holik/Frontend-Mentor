@@ -2,25 +2,20 @@
   margin: 2rem $margin-small 5rem;
   display: grid;
   gap: 2.8rem;
-  @media screen and (min-width: $tablet) {
-    grid-template-columns: repeat(2, 1fr);
 
-    .most-popular {
-      align-self: stretch;
-    }
-  }
-
-  .heading--2 {
-    color: $color-white;
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .most-popular {
     background-image: linear-gradient(
       $color-orange-gradient,
       $color-pink-gradient
     );
     padding: 1.5rem;
   }
-  .heading--2,
+  .heading--2 {
+    color: $color-white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .most-popular,
   .course-box {
     border-radius: 10px;
   }
@@ -49,6 +44,20 @@
     &__btn {
       font-size: 1.125rem;
       line-height: 28px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem $margin-medium 5rem;
+    column-gap: 0.8rem;
+    row-gap: 3.5rem;
+    .most-popular {
+      padding-top: 3.5rem;
+    }
+
+    .course-box {
+      padding: 3.5rem 1.5rem 2rem;
     }
   }
 }
