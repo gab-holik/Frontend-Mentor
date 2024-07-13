@@ -1,4 +1,8 @@
 .header {
   @include layout;
   margin: 0.8rem $margin-small 2.5rem;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0.8rem $margin-medium 2.5rem;
+  }
 }
