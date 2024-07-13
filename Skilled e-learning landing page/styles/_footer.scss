@@ -1,5 +1,12 @@
-.footer {
-  @include layout;
+footer {
   background-color: $color-primary-dark;
-  padding: 2.2rem $margin-small;
+  padding: 2.2rem 0;
+  .footer {
+    @include layout;
+    margin: 0 $margin-small;
+
+    @media screen and (min-width: $tablet) {
+      margin: 0 $margin-medium;
+    }
+  }
 }
