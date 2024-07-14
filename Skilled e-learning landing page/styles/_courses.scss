@@ -44,7 +44,8 @@
     &__btn {
       font-size: 1.125rem;
       line-height: 28px;
-      &:hover {
+      &:hover,
+      &:active {
         opacity: 0.5;
       }
     }
