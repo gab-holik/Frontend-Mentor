@@ -129,8 +129,9 @@ img {
   &:hover,
   &:active {
     background-image: linear-gradient(
-      rgba($color-purple-gradient, 0.5),
-      rgba($color-pink-gradient, 0.5)
-    );
+        rgba($color-white, 0.5),
+        rgba($color-white, 0.5)
+      ),
+      linear-gradient($color-purple-gradient, $color-pink-gradient);
   }
 }
