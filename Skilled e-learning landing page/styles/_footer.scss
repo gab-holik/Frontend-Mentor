@@ -8,5 +8,9 @@ footer {
     @media screen and (min-width: $tablet) {
       margin: 0 $margin-medium;
     }
+    @media screen and (min-width: $desktop) {
+      margin: 0 $margin-large;
+      max-width: 1110px;
+    }
   }
 }
