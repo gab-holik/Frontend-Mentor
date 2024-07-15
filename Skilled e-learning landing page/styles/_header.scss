@@ -5,4 +5,8 @@
   @media screen and (min-width: $tablet) {
     margin: 0.8rem $margin-medium 2.5rem;
   }
+  @media screen and (min-width: $desktop) {
+    margin: 0.8rem $margin-large 2.5rem;
+    max-width: 1110px;
+  }
 }
