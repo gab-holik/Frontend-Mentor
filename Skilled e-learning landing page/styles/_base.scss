@@ -10,14 +10,16 @@ $color-pink-gradient: #f02aa6;
 $color-purple-gradient: #4851ff;
 
 //Logo
-$logo-width: 89px;
+$logo-width-med: 89px;
+$logo-width-lg: 111px;
 
 //Margins & Paddings
 $margin-small: 1rem;
 $margin-medium: 2.5rem;
+$margin-large: 8rem;
 
 //Breakpoints
-
+$large: 1445px;
 $desktop: 900px;
 $tablet: 600px;
 $mobile: 375px;
@@ -49,6 +51,11 @@ body {
   background-image: linear-gradient(#ffffff, #eeefff);
   color: $color-grey;
   overflow-x: hidden;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 1.125rem;
+    line-height: 28px;
+  }
 }
 .heading--1,
 .heading--2,
@@ -64,13 +71,17 @@ img {
 
 //Logo
 .logo {
-  width: $logo-width;
+  width: $logo-width-med;
+  @media screen and (min-width: $desktop) {
+    width: $logo-width-lg;
+  }
 }
 
 //Buttons
 %btn-reset {
   text-decoration: none;
   font-weight: 700;
+  transition: all 0.3s;
 }
 %btn-color {
   color: $color-white;
@@ -97,9 +108,12 @@ img {
   &:active {
     background-color: $color-blue;
   }
+  @media screen and (min-width: $desktop) {
+    padding: 0.8rem 2rem;
+  }
 }
 .hero__btn {
-  @include btn(1.1rem, 2.3rem, 31.5px);
+  @include btn(1.1rem, 2rem, 31.5px);
   &:link,
   &:visited {
     background-image: linear-gradient(
@@ -119,7 +133,7 @@ img {
   color: $color-bright-pink;
 }
 .footer__btn {
-  @include btn(0.8rem, 1.5rem, 28px);
+  @include btn(0.8rem, 2rem, 28px);
   &:link,
   &:visited {
     background-image: linear-gradient(
