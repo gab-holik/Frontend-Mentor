@@ -2,17 +2,6 @@
   margin: 2rem $margin-small 0;
   position: relative;
 
-  @media screen and (min-width: $tablet) {
-    margin: 2rem $margin-medium 11rem;
-    width: 54%;
-
-    &__img {
-      position: absolute;
-      top: -210px;
-      right: -605px;
-      z-index: -1;
-    }
-  }
   .heading--1 {
     font-size: 2.5rem;
     line-height: 51px;
@@ -30,5 +19,43 @@
   }
   &__img {
     margin: 0 auto;
+  }
+  @media screen and (min-width: $tablet) {
+    margin: 2rem $margin-medium 11rem;
+    &__text {
+      width: 58%;
+    }
+
+    &__img {
+      position: absolute;
+      top: -210px;
+      right: -340px;
+      z-index: -1;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 2rem $margin-large 14rem;
+
+    &__text {
+      width: 39%;
+      padding-top: 8rem;
+    }
+
+    &__paragraph {
+      margin-right: 1.125rem;
+      margin-bottom: 2.8rem;
+    }
+    &__img {
+      top: -246px;
+      right: -382px;
+      width: 991.63px;
+      height: 936.92px;
+    }
+
+    .heading--1 {
+      font-size: 3.5rem;
+      line-height: 70px;
+      margin-bottom: 2rem;
+    }
   }
 }
