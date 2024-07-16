@@ -12,5 +12,8 @@ footer {
       margin: 0 $margin-large;
       max-width: 1110px;
     }
+    @media screen and (min-width: $large) {
+      margin: 0 auto;
+    }
   }
 }
