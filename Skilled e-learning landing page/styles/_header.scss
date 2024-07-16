@@ -9,4 +9,8 @@
     margin: 0.8rem $margin-large 2.5rem;
     max-width: 1110px;
   }
+
+  @media screen and (min-width: $large) {
+    margin: 0.8rem auto 2.5rem;
+  }
 }
