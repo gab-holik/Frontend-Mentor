@@ -102,4 +102,7 @@
       }
     }
   }
+  @media screen and (min-width: $large) {
+    margin: 2rem auto 9rem;
+  }
 }
