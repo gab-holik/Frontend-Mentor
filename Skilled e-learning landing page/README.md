@@ -15,7 +15,7 @@ Mobile
 ### Built with
 
 - Semantic HTML5 markup
-- SASS
+- SCSS
 - Flexbox
 - Grid
 - Mobile-first approach
