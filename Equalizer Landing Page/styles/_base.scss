@@ -1,0 +1,51 @@
+//Colors
+$color-primary-dark: #191826;
+$color-cyan: #66e2dc;
+$color-orange: #fa7453;
+$color-yellow: #ffb964;
+$color-white: #fcfaf9;
+
+//Typography
+$line-height-med: 110%;
+$line-height-lg: 150%;
+$line-height-xlg: 180%;
+
+$font-w-regular: 400;
+$font-w-bold: 700;
+
+//Font size
+
+$x-small-font: 1.125rem;
+$small-font: 1.25rem;
+$medium-font: 2.5rem;
+$large-font: 4rem;
+$x-large-font: 5.5rem;
+
+//Global reset
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "IBM Plex Sans", system-ui;
+  color: $color-primary-dark;
+  background-color: $color-white;
+  background-image: url(/img/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position: -35% 56%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.logo {
+  width: 9rem;
+  height: 2rem;
+}
