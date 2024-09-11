@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   margin-top: 7rem;
+
   &__img {
     width: 13rem;
     transform: translate(41%, -25%);
@@ -11,5 +12,41 @@
 
   &__text-box {
     background-color: $color-orange;
+    padding: 2rem 1rem 2rem 1.3rem;
+    margin-top: -3rem;
+    .pricing {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: $small-font;
+    }
+    .price {
+      font-size: $large-font;
+      font-weight: bold;
+    }
+  }
+  &__heading {
+    font-size: $medium-font;
+    line-height: $line-height-med;
+    margin-bottom: 1.5rem;
+  }
+  &__text {
+    line-height: $line-height-lg;
+    margin-bottom: 2.3rem;
+  }
+  .btns {
+    margin-top: 2.5rem;
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      border-radius: 0.75rem;
+      background-color: aqua;
+      padding: 1.3rem 2rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+      font-size: $x-small-font;
+      font-weight: bold;
+    }
   }
 }
