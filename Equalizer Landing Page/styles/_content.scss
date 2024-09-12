@@ -59,7 +59,9 @@
       background-color: $color-primary-dark;
       color: $color-white;
 
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         background-color: $color-cyan;
         color: $color-primary-dark;
       }
@@ -67,7 +69,9 @@
     .btn-android {
       background-color: $color-white;
       color: $color-primary-dark;
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         background-color: $color-yellow;
       }
     }
