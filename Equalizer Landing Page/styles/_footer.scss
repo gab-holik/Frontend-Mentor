@@ -1,0 +1,25 @@
+.footer {
+  margin: 4rem 1rem 5rem 1.3rem;
+  line-height: $line-height-lg;
+
+  &__logo,
+  &__contact {
+    margin-bottom: 2rem;
+  }
+  &__socials {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: $small-font;
+    .social:link,
+    .social:visited {
+      color: $color-primary-dark;
+      transition: all 0.5s;
+    }
+    .social:hover,
+    .social:active,
+    .social:focus {
+      color: $color-orange;
+    }
+  }
+}
