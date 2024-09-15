@@ -44,6 +44,11 @@ body {
   background-image: url(/img/bg-main-mobile.png);
   background-repeat: no-repeat;
   background-position: -18% -20%;
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(/img/bg-main-tablet.png);
+    background-position: 77% -32%;
+  }
 }
 
 img {
