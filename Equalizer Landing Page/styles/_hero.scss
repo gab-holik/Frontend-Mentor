@@ -5,8 +5,14 @@
     letter-spacing: -1px;
     line-height: 100%;
     margin-bottom: 2.5rem;
+    @media screen and (min-width: $tablet) {
+      font-size: $large-font;
+    }
   }
   &__intro {
     line-height: $line-height-lg;
+    @media screen and (min-width: $tablet) {
+      font-size: $x-small-font;
+    }
   }
 }
