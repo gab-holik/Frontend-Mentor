@@ -22,10 +22,10 @@ $large-font: 4rem;
 $x-large-font: 5.5rem;
 
 //Breakpoints
-$large: 1445px;
-$desktop: 900px;
-$tablet: 600px;
-$mobile: 375px;
+$large: 90.31rem;
+$desktop: 56.25rem;
+$tablet: 37.5rem;
+$mobile: 23.44rem;
 
 //Global reset
 
@@ -44,10 +44,21 @@ body {
   background-image: url(/img/bg-main-mobile.png);
   background-repeat: no-repeat;
   background-position: -18% -20%;
+  position: relative;
+  overflow-x: hidden;
 
   @media screen and (min-width: $tablet) {
     background-image: url(/img/bg-main-tablet.png);
-    background-position: 77% -32%;
+    background-position: 90% -18%;
+
+    &::before {
+      content: url(/img/bg-pattern-1.svg);
+      position: absolute;
+      right: -0.7rem;
+      top: -2.5rem;
+      width: 16.66rem;
+      height: 25rem;
+    }
   }
 }
 
