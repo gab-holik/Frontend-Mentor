@@ -7,12 +7,14 @@
     margin-bottom: 2.5rem;
     @media screen and (min-width: $tablet) {
       font-size: $large-font;
+      width: 26rem;
     }
   }
   &__intro {
     line-height: $line-height-lg;
     @media screen and (min-width: $tablet) {
       font-size: $x-small-font;
+      width: 31.5rem;
     }
   }
 }
