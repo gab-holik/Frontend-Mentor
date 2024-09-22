@@ -2,10 +2,25 @@
   margin: 4rem 1rem 5rem 1.3rem;
   line-height: $line-height-lg;
 
+  @media screen and (min-width: $tablet) {
+    & {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      column-gap: 6rem;
+      &__logo {
+        grid-column: 1 / -1;
+      }
+    }
+    &__socials {
+      padding-top: 1.5rem;
+    }
+  }
+
   &__logo,
   &__contact {
     margin-bottom: 2rem;
   }
+
   &__socials {
     list-style: none;
     display: flex;
